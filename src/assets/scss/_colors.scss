@@ -1,0 +1,19 @@
+@import "_variables";
+@each $color, $value in $theme-colors {
+  $is-text-color: str-index($color, "text") != null;
+  .#{$color} {
+    @if $is-text-color {
+      color: #{$value};
+    } @else {
+      background-color: #{$value};
+    }
+  }
+}
+@each $color, $value in $default-colors {
+  .ghun-text-#{$color} {
+    color: #{$value};
+  }
+  .ghun-bg-#{$color} {
+    background-color: #{$value};
+  }
+}

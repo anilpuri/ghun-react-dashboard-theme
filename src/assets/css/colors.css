@@ -1,0 +1,515 @@
+:root {
+  --ghun-primary-2: #3498db; /* Dodger Blue */
+  --ghun-info: #5bc0de; /* Sky Blue */
+  --ghun-warning: #f39c12; /* Orange */
+  --ghun-danger: #e74c3c; /* Alizarin Crimson */
+  --ghun-secondary-2: #95a5a6; /* Concrete */
+  --ghun-dark: #34495e; /* Wet Asphalt */
+  --ghun-light: #ecf0f1; /* Silver */
+  --ghun-success: #2ecc71; /* Emerald Green */
+  --ghun-muted: #7f8c8d; /* Silver Chalice */
+}
+
+/* Shade Colors */
+:root {
+  /* Primary Shades */
+  --ghun-primary-shade-100: #c0ddf6;
+  --ghun-primary-shade-200: #8ab8e8;
+  --ghun-primary-shade-300: #5e9ad2;
+  --ghun-primary-shade-400: #4a8bc2;
+  --ghun-primary-shade-500: #2e6da4;
+  --ghun-primary-shade-600: #2a5d8a;
+  --ghun-primary-shade-700: #1e486b;
+  --ghun-primary-shade-800: #183b57;
+  --ghun-primary-shade-900: #102841;
+
+  /* Info Shades */
+  --ghun-info-shade-100: #d8f0f6;
+  --ghun-info-shade-200: #a4d9eb;
+  --ghun-info-shade-300: #70c0e0;
+  --ghun-info-shade-400: #59aed4;
+  --ghun-info-shade-500: #3a97c0;
+  --ghun-info-shade-600: #347f9d;
+  --ghun-info-shade-700: #255a75;
+  --ghun-info-shade-800: #1e475d;
+  --ghun-info-shade-900: #143346;
+
+  /* Warning Shades */
+  --ghun-warning-shade-100: #f9e79f;
+  --ghun-warning-shade-200: #f4d03f;
+  --ghun-warning-shade-300: #f0c300;
+  --ghun-warning-shade-400: #e4b700;
+  --ghun-warning-shade-500: #d4a000;
+  --ghun-warning-shade-600: #bf8c00;
+  --ghun-warning-shade-700: #997100;
+  --ghun-warning-shade-800: #7f6200;
+  --ghun-warning-shade-900: #5c4c00;
+
+  /* Danger Shades */
+  --ghun-danger-shade-100: #f5b7b1;
+  --ghun-danger-shade-200: #f1948a;
+  --ghun-danger-shade-300: #e57373;
+  --ghun-danger-shade-400: #d9534f;
+  --ghun-danger-shade-500: #e44d42;
+  --ghun-danger-shade-600: #d33731;
+  --ghun-danger-shade-700: #b32722;
+  --ghun-danger-shade-800: #931d18;
+  --ghun-danger-shade-900: #6e1513;
+
+  /* Secondary Shades */
+  --ghun-secondary-shade-100: #f2f2f2;
+  --ghun-secondary-shade-200: #d9d9d9;
+  --ghun-secondary-shade-300: #bfbfbf;
+  --ghun-secondary-shade-400: #a6a6a6;
+  --ghun-secondary-shade-500: #8c8c8c;
+  --ghun-secondary-shade-600: #737373;
+  --ghun-secondary-shade-700: #595959;
+  --ghun-secondary-shade-800: #404040;
+  --ghun-secondary-shade-900: #262626;
+
+  /* Dark Shades */
+  --ghun-dark-shade-100: #5a6e7f;
+  --ghun-dark-shade-200: #465a6f;
+  --ghun-dark-shade-300: #2e3a4e;
+  --ghun-dark-shade-400: #253445;
+  --ghun-dark-shade-500: #1c2833;
+  --ghun-dark-shade-600: #1a2331;
+  --ghun-dark-shade-700: #131922;
+  --ghun-dark-shade-800: #0e131a;
+  --ghun-dark-shade-900: #080c10;
+
+  /* Light Shades */
+  --ghun-light-shade-100: #f9f9f9;
+  --ghun-light-shade-200: #f0f0f0;
+  --ghun-light-shade-300: #e5e5e5;
+  --ghun-light-shade-400: #d2d2d2;
+  --ghun-light-shade-500: #bfbfbf;
+  --ghun-light-shade-600: #a6a6a6;
+  --ghun-light-shade-700: #8c8c8c;
+  --ghun-light-shade-800: #737373;
+  --ghun-light-shade-900: #595959;
+
+  /* Success Shades */
+  --ghun-success-shade-100: #c8e6c9;
+  --ghun-success-shade-200: #a5d6a7;
+  --ghun-success-shade-300: #81c784;
+  --ghun-success-shade-400: #66bb6a;
+  --ghun-success-shade-500: #4caf50;
+  --ghun-success-shade-600: #43a047;
+  --ghun-success-shade-700: #388e3c;
+  --ghun-success-shade-800: #2e7d32;
+  --ghun-success-shade-900: #1b5e20;
+
+  /* Muted Shades */
+  --ghun-muted-shade-100: #f7f7f7;
+  --ghun-muted-shade-200: #f0f0f0;
+  --ghun-muted-shade-300: #e0e0e0;
+  --ghun-muted-shade-400: #bdbdbd;
+  --ghun-muted-shade-500: #9e9e9e;
+  --ghun-muted-shade-600: #757575;
+  --ghun-muted-shade-700: #616161;
+  --ghun-muted-shade-800: #424242;
+  --ghun-muted-shade-900: #303030;
+}
+
+/* Dark Theme - dark-purple */
+[app-theme="dark-purple"] {
+  /* Primary Color (Purple) */
+  --ghun-text-primary: #ffffff;
+  --ghun-text-primary-100: #f2f2f2;
+  --ghun-text-primary-200: #e6e6e6;
+  --ghun-text-primary-300: #d9d9d9;
+  --ghun-text-primary-400: #cccccc;
+  --ghun-text-primary-500: #bfbfbf;
+  --ghun-text-primary-600: #b3b3b3;
+  --ghun-text-primary-700: #a6a6a6;
+  --ghun-text-primary-800: #999999;
+  --ghun-text-primary-900: #8c8c8c;
+
+  /* Secondary Text Color (Shades of Purple for Text) */
+  --ghun-text-secondary: #4b0082;
+  --ghun-text-secondary-100: #660099;
+  --ghun-text-secondary-200: #8000cc;
+  --ghun-text-secondary-300: #9900ff;
+  --ghun-text-secondary-400: #b366ff;
+  --ghun-text-secondary-500: #cc99ff;
+  --ghun-text-secondary-600: #e699ff;
+  --ghun-text-secondary-700: #f2b2ff;
+  --ghun-text-secondary-800: #ffbfff;
+  --ghun-text-secondary-900: #ffccff;
+
+  /* Background Color (Shades of Dark Purple for Background) */
+  --ghun-bg-primary: #2d2d2d;
+  --ghun-bg-primary-100: #1a1a1a;
+  --ghun-bg-primary-200: #333333;
+  --ghun-bg-primary-300: #4d4d4d;
+  --ghun-bg-primary-400: #666666;
+  --ghun-bg-primary-500: #808080;
+  --ghun-bg-primary-600: #999999;
+  --ghun-bg-primary-700: #b3b3b3;
+  --ghun-bg-primary-800: #cccccc;
+  --ghun-bg-primary-900: #e6e6e6;
+
+  /* Secondary Background Color (Shades of Dark Purple for Background) */
+  --ghun-bg-secondary: #4b0082;
+  --ghun-bg-secondary-100: #660099;
+  --ghun-bg-secondary-200: #8000cc;
+  --ghun-bg-secondary-300: #9900ff;
+  --ghun-bg-secondary-400: #b366ff;
+  --ghun-bg-secondary-500: #cc99ff;
+  --ghun-bg-secondary-600: #e699ff;
+  --ghun-bg-secondary-700: #f2b2ff;
+  --ghun-bg-secondary-800: #ffbfff;
+  --ghun-bg-secondary-900: #ffccff;
+}
+
+/* Dark Theme - dark-green */
+[app-theme="dark-green"] {
+  /* Primary Color (Green) */
+  --ghun-text-primary: #ffffff;
+  --ghun-text-primary-100: #f2f2f2;
+  --ghun-text-primary-200: #e6e6e6;
+  --ghun-text-primary-300: #d9d9d9;
+  --ghun-text-primary-400: #cccccc;
+  --ghun-text-primary-500: #bfbfbf;
+  --ghun-text-primary-600: #b3b3b3;
+  --ghun-text-primary-700: #a6a6a6;
+  --ghun-text-primary-800: #999999;
+  --ghun-text-primary-900: #8c8c8c;
+
+  /* Secondary Text Color (Shades of Green for Text) */
+  --ghun-text-secondary: #006400; /* Dark Green */
+  --ghun-text-secondary-100: #008000;
+  --ghun-text-secondary-200: #00a000;
+  --ghun-text-secondary-300: #00c000;
+  --ghun-text-secondary-400: #00e600;
+  --ghun-text-secondary-500: #00ff00;
+  --ghun-text-secondary-600: #33ff33;
+  --ghun-text-secondary-700: #66ff66;
+  --ghun-text-secondary-800: #99ff99;
+  --ghun-text-secondary-900: #ccffcc;
+
+  /* Background Color (Shades of Dark Green for Background) */
+  --ghun-bg-primary: #2d2d2d; /* Dark Green */
+  --ghun-bg-primary-100: #1a1a1a;
+  --ghun-bg-primary-200: #333333;
+  --ghun-bg-primary-300: #4d4d4d;
+  --ghun-bg-primary-400: #666666;
+  --ghun-bg-primary-500: #808080;
+  --ghun-bg-primary-600: #999999;
+  --ghun-bg-primary-700: #b3b3b3;
+  --ghun-bg-primary-800: #cccccc;
+  --ghun-bg-primary-900: #e6e6e6;
+
+  /* Secondary Background Color (Shades of Dark Green for Background) */
+  --ghun-bg-secondary: #006400; /* Dark Green */
+  --ghun-bg-secondary-100: #008000;
+  --ghun-bg-secondary-200: #00a000;
+  --ghun-bg-secondary-300: #00c000;
+  --ghun-bg-secondary-400: #00e600;
+  --ghun-bg-secondary-500: #00ff00;
+  --ghun-bg-secondary-600: #33ff33;
+  --ghun-bg-secondary-700: #66ff66;
+  --ghun-bg-secondary-800: #99ff99;
+  --ghun-bg-secondary-900: #ccffcc;
+}
+/* Dark Theme - dark-orange */
+[app-theme="dark-orange"] {
+  /* Primary Color (Orange) */
+  --ghun-text-primary: #ffffff;
+  --ghun-text-primary-100: #f2f2f2;
+  --ghun-text-primary-200: #e6e6e6;
+  --ghun-text-primary-300: #d9d9d9;
+  --ghun-text-primary-400: #cccccc;
+  --ghun-text-primary-500: #bfbfbf;
+  --ghun-text-primary-600: #b3b3b3;
+  --ghun-text-primary-700: #a6a6a6;
+  --ghun-text-primary-800: #999999;
+  --ghun-text-primary-900: #8c8c8c;
+
+  /* Secondary Text Color (Shades of Orange for Text) */
+  --ghun-text-secondary: #8b4513; /* Saddle Brown (Dark Orange) */
+  --ghun-text-secondary-100: #a0522d;
+  --ghun-text-secondary-200: #cd853f;
+  --ghun-text-secondary-300: #ff8c00;
+  --ghun-text-secondary-400: #ffa500;
+  --ghun-text-secondary-500: #ffb366;
+  --ghun-text-secondary-600: #ffcc80;
+  --ghun-text-secondary-700: #ffd699;
+  --ghun-text-secondary-800: #ffe0b3;
+  --ghun-text-secondary-900: #ffebcc;
+
+  /* Background Color (Shades of Dark Orange for Background) */
+  --ghun-bg-primary: #2d2d2d; /* Dark Orange */
+  --ghun-bg-primary-100: #1a1a1a;
+  --ghun-bg-primary-200: #333333;
+  --ghun-bg-primary-300: #4d4d4d;
+  --ghun-bg-primary-400: #666666;
+  --ghun-bg-primary-500: #808080;
+  --ghun-bg-primary-600: #999999;
+  --ghun-bg-primary-700: #b3b3b3;
+  --ghun-bg-primary-800: #cccccc;
+  --ghun-bg-primary-900: #e6e6e6;
+
+  /* Secondary Background Color (Shades of Dark Orange for Background) */
+  --ghun-bg-secondary: #8b4513; /* Saddle Brown (Dark Orange) */
+  --ghun-bg-secondary-100: #a0522d;
+  --ghun-bg-secondary-200: #cd853f;
+  --ghun-bg-secondary-300: #ff8c00;
+  --ghun-bg-secondary-400: #ffa500;
+  --ghun-bg-secondary-500: #ffb366;
+  --ghun-bg-secondary-600: #ffcc80;
+  --ghun-bg-secondary-700: #ffd699;
+  --ghun-bg-secondary-800: #ffe0b3;
+  --ghun-bg-secondary-900: #ffebcc;
+}
+/* Dark Theme - pure-dark */
+[app-theme="pure-dark"] {
+  /* Primary Color (Black) */
+  --ghun-text-primary: #ffffff;
+  --ghun-text-primary-100: #f2f2f2;
+  --ghun-text-primary-200: #e6e6e6;
+  --ghun-text-primary-300: #d9d9d9;
+  --ghun-text-primary-400: #cccccc;
+  --ghun-text-primary-500: #bfbfbf;
+  --ghun-text-primary-600: #b3b3b3;
+  --ghun-text-primary-700: #a6a6a6;
+  --ghun-text-primary-800: #999999;
+  --ghun-text-primary-900: #8c8c8c;
+
+  /* Secondary Text Color (Shades of Gray for Text) */
+  --ghun-text-secondary: #555555; /* Dim Gray (Dark Gray) */
+  --ghun-text-secondary-100: #666666;
+  --ghun-text-secondary-200: #7f7f7f;
+  --ghun-text-secondary-300: #999999;
+  --ghun-text-secondary-400: #b2b2b2;
+  --ghun-text-secondary-500: #cccccc;
+  --ghun-text-secondary-600: #d9d9d9;
+  --ghun-text-secondary-700: #e6e6e6;
+  --ghun-text-secondary-800: #f2f2f2;
+  --ghun-text-secondary-900: #ffffff;
+
+  /* Background Color (Shades of Pure Dark for Background) */
+  --ghun-bg-primary: #000000; /* Pure Black */
+  --ghun-bg-primary-100: #1a1a1a;
+  --ghun-bg-primary-200: #333333;
+  --ghun-bg-primary-300: #4d4d4d;
+  --ghun-bg-primary-400: #666666;
+  --ghun-bg-primary-500: #808080;
+  --ghun-bg-primary-600: #999999;
+  --ghun-bg-primary-700: #b3b3b3;
+  --ghun-bg-primary-800: #cccccc;
+  --ghun-bg-primary-900: #e6e6e6;
+
+  /* Secondary Background Color (Shades of Pure Dark for Background) */
+  --ghun-bg-secondary: #000000; /* Pure Black */
+  --ghun-bg-secondary-100: #1a1a1a;
+  --ghun-bg-secondary-200: #333333;
+  --ghun-bg-secondary-300: #4d4d4d;
+  --ghun-bg-secondary-400: #666666;
+  --ghun-bg-secondary-500: #808080;
+  --ghun-bg-secondary-600: #999999;
+  --ghun-bg-secondary-700: #b3b3b3;
+  --ghun-bg-secondary-800: #cccccc;
+  --ghun-bg-secondary-900: #e6e6e6;
+}
+/* Light Theme - pure-light */
+[app-theme="pure-light"] {
+  /* Primary Color (White) */
+  --ghun-text-primary: #000000;
+  --ghun-text-primary-100: #1a1a1a;
+  --ghun-text-primary-200: #333333;
+  --ghun-text-primary-300: #4d4d4d;
+  --ghun-text-primary-400: #666666;
+  --ghun-text-primary-500: #808080;
+  --ghun-text-primary-600: #999999;
+  --ghun-text-primary-700: #b3b3b3;
+  --ghun-text-primary-800: #cccccc;
+  --ghun-text-primary-900: #e6e6e6;
+
+  /* Secondary Text Color (Shades of Gray for Text) */
+  --ghun-text-secondary: #555555; /* Dim Gray (Dark Gray) */
+  --ghun-text-secondary-100: #666666;
+  --ghun-text-secondary-200: #7f7f7f;
+  --ghun-text-secondary-300: #999999;
+  --ghun-text-secondary-400: #b2b2b2;
+  --ghun-text-secondary-500: #cccccc;
+  --ghun-text-secondary-600: #d9d9d9;
+  --ghun-text-secondary-700: #e6e6e6;
+  --ghun-text-secondary-800: #f2f2f2;
+  --ghun-text-secondary-900: #ffffff;
+
+  /* Background Color (Shades of Pure Light for Background) */
+  --ghun-bg-primary: #ffffff; /* Pure White */
+  --ghun-bg-primary-100: #f2f2f2;
+  --ghun-bg-primary-200: #e6e6e6;
+  --ghun-bg-primary-300: #d9d9d9;
+  --ghun-bg-primary-400: #cccccc;
+  --ghun-bg-primary-500: #bfbfbf;
+  --ghun-bg-primary-600: #b3b3b3;
+  --ghun-bg-primary-700: #a6a6a6;
+  --ghun-bg-primary-800: #999999;
+  --ghun-bg-primary-900: #8c8c8c;
+
+  /* Secondary Background Color (Shades of Pure Light for Background) */
+  --ghun-bg-secondary: #ffffff; /* Pure White */
+  --ghun-bg-secondary-100: #f2f2f2;
+  --ghun-bg-secondary-200: #e6e6e6;
+  --ghun-bg-secondary-300: #d9d9d9;
+  --ghun-bg-secondary-400: #cccccc;
+  --ghun-bg-secondary-500: #bfbfbf;
+  --ghun-bg-secondary-600: #b3b3b3;
+  --ghun-bg-secondary-700: #a6a6a6;
+  --ghun-bg-secondary-800: #999999;
+  --ghun-bg-secondary-900: #8c8c8c;
+}
+/* Light Theme - light-purple */
+[app-theme="light-purple"] {
+  /* Primary Color (Purple) */
+  --ghun-text-primary: #000000;
+  --ghun-text-primary-100: #1a1a1a;
+  --ghun-text-primary-200: #333333;
+  --ghun-text-primary-300: #4d4d4d;
+  --ghun-text-primary-400: #666666;
+  --ghun-text-primary-500: #808080;
+  --ghun-text-primary-600: #999999;
+  --ghun-text-primary-700: #b3b3b3;
+  --ghun-text-primary-800: #cccccc;
+  --ghun-text-primary-900: #e6e6e6;
+
+  /* Secondary Text Color (Shades of Purple for Text) */
+  --ghun-text-secondary: #800080; /* Purple */
+  --ghun-text-secondary-100: #993399;
+  --ghun-text-secondary-200: #a64ca6;
+  --ghun-text-secondary-300: #b366b3;
+  --ghun-text-secondary-400: #cc99cc;
+  --ghun-text-secondary-500: #d98cd9;
+  --ghun-text-secondary-600: #e699e6;
+  --ghun-text-secondary-700: #f2b2f2;
+  --ghun-text-secondary-800: #ffbfff;
+  --ghun-text-secondary-900: #ffffff;
+
+  /* Background Color (Shades of Light Purple for Background) */
+  --ghun-bg-primary: #f5f5f5; /* White Smoke (Light Gray) */
+  --ghun-bg-primary-100: #ffffff;
+  --ghun-bg-primary-200: #f2f2f2;
+  --ghun-bg-primary-300: #e6e6e6;
+  --ghun-bg-primary-400: #d9d9d9;
+  --ghun-bg-primary-500: #cccccc;
+  --ghun-bg-primary-600: #bfbfbf;
+  --ghun-bg-primary-700: #b3b3b3;
+  --ghun-bg-primary-800: #a6a6a6;
+  --ghun-bg-primary-900: #999999;
+
+  /* Secondary Background Color (Shades of Light Purple for Background) */
+  --ghun-bg-secondary: #800080; /* Purple */
+  --ghun-bg-secondary-100: #993399;
+  --ghun-bg-secondary-200: #a64ca6;
+  --ghun-bg-secondary-300: #b366b3;
+  --ghun-bg-secondary-400: #cc99cc;
+  --ghun-bg-secondary-500: #d98cd9;
+  --ghun-bg-secondary-600: #e699e6;
+  --ghun-bg-secondary-700: #f2b2f2;
+  --ghun-bg-secondary-800: #ffbfff;
+  --ghun-bg-secondary-900: #ffffff;
+}
+/* Light Theme - light-green */
+[app-theme="light-green"] {
+  /* Primary Color (Green) */
+  --ghun-text-primary: #000000;
+  --ghun-text-primary-100: #1a1a1a;
+  --ghun-text-primary-200: #333333;
+  --ghun-text-primary-300: #4d4d4d;
+  --ghun-text-primary-400: #666666;
+  --ghun-text-primary-500: #808080;
+  --ghun-text-primary-600: #999999;
+  --ghun-text-primary-700: #b3b3b3;
+  --ghun-text-primary-800: #cccccc;
+  --ghun-text-primary-900: #e6e6e6;
+
+  /* Secondary Text Color (Shades of Green for Text) */
+  --ghun-text-secondary: #008000; /* Green */
+  --ghun-text-secondary-100: #00a000;
+  --ghun-text-secondary-200: #00c000;
+  --ghun-text-secondary-300: #00e600;
+  --ghun-text-secondary-400: #00ff00;
+  --ghun-text-secondary-500: #33ff33;
+  --ghun-text-secondary-600: #66ff66;
+  --ghun-text-secondary-700: #99ff99;
+  --ghun-text-secondary-800: #ccffcc;
+  --ghun-text-secondary-900: #ffffff;
+
+  /* Background Color (Shades of Light Green for Background) */
+  --ghun-bg-primary: #f5f5f5; /* White Smoke (Light Gray) */
+  --ghun-bg-primary-100: #ffffff;
+  --ghun-bg-primary-200: #f2f2f2;
+  --ghun-bg-primary-300: #e6e6e6;
+  --ghun-bg-primary-400: #d9d9d9;
+  --ghun-bg-primary-500: #cccccc;
+  --ghun-bg-primary-600: #bfbfbf;
+  --ghun-bg-primary-700: #b3b3b3;
+  --ghun-bg-primary-800: #a6a6a6;
+  --ghun-bg-primary-900: #999999;
+
+  /* Secondary Background Color (Shades of Light Green for Background) */
+  --ghun-bg-secondary: #008000; /* Green */
+  --ghun-bg-secondary-100: #00a000;
+  --ghun-bg-secondary-200: #00c000;
+  --ghun-bg-secondary-300: #00e600;
+  --ghun-bg-secondary-400: #00ff00;
+  --ghun-bg-secondary-500: #33ff33;
+  --ghun-bg-secondary-600: #66ff66;
+  --ghun-bg-secondary-700: #99ff99;
+  --ghun-bg-secondary-800: #ccffcc;
+  --ghun-bg-secondary-900: #ffffff;
+}
+/* Light Theme - light-orange */
+[app-theme="light-orange"] {
+  /* Primary Color (Orange) */
+  --ghun-text-primary: #000000;
+  --ghun-text-primary-100: #1a1a1a;
+  --ghun-text-primary-200: #333333;
+  --ghun-text-primary-300: #4d4d4d;
+  --ghun-text-primary-400: #666666;
+  --ghun-text-primary-500: #808080;
+  --ghun-text-primary-600: #999999;
+  --ghun-text-primary-700: #b3b3b3;
+  --ghun-text-primary-800: #cccccc;
+  --ghun-text-primary-900: #e6e6e6;
+
+  /* Secondary Text Color (Shades of Orange for Text) */
+  --ghun-text-secondary: #ff8c00; /* Dark Orange */
+  --ghun-text-secondary-100: #ffa500;
+  --ghun-text-secondary-200: #ffb366;
+  --ghun-text-secondary-300: #ffcc80;
+  --ghun-text-secondary-400: #ffd699;
+  --ghun-text-secondary-500: #ffe0b3;
+  --ghun-text-secondary-600: #ffe6cc;
+  --ghun-text-secondary-700: #ffebd9;
+  --ghun-text-secondary-800: #fff2e6;
+  --ghun-text-secondary-900: #fff5eb;
+
+  /* Background Color (Shades of Light Orange for Background) */
+  --ghun-bg-primary: #f5f5f5; /* White Smoke (Light Gray) */
+  --ghun-bg-primary-100: #ffffff;
+  --ghun-bg-primary-200: #f2f2f2;
+  --ghun-bg-primary-300: #e6e6e6;
+  --ghun-bg-primary-400: #d9d9d9;
+  --ghun-bg-primary-500: #cccccc;
+  --ghun-bg-primary-600: #bfbfbf;
+  --ghun-bg-primary-700: #b3b3b3;
+  --ghun-bg-primary-800: #a6a6a6;
+  --ghun-bg-primary-900: #999999;
+
+  /* Secondary Background Color (Shades of Light Orange for Background) */
+  --ghun-bg-secondary: #ff8c00; /* Dark Orange */
+  --ghun-bg-secondary-100: #ffa500;
+  --ghun-bg-secondary-200: #ffb366;
+  --ghun-bg-secondary-300: #ffcc80;
+  --ghun-bg-secondary-400: #ffd699;
+  --ghun-bg-secondary-500: #ffe0b3;
+  --ghun-bg-secondary-600: #ffe6cc;
+  --ghun-bg-secondary-700: #ffebd9;
+  --ghun-bg-secondary-800: #fff2e6;
+  --ghun-bg-secondary-900: #fff5eb;
+}

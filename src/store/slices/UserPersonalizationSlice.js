@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import LocalStorageHelper from "../../helpers/LocalStorageHelper";
 const initialState = {
-  SelectedTheme: "light",
+  SelectedTheme: "pure-light",
 };
 
 const UserPersonalizationSlice = createSlice({
